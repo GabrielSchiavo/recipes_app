@@ -1,16 +1,40 @@
-# meals_app
+# meals-app
 
-A new Flutter project.
+<p align="left">
+   <!-- <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/> -->
+   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/>
+   <img src="https://img.shields.io/github/license/GabrielSchiavo/meals-app?color=blue&style=for-the-badge"/>
+</p>
 
-## Getting Started
+App para cadastro de refeições e receitas desenvolvido com a linguagem Dart e framework Flutter.
 
-This project is a starting point for a Flutter application.
+## :hammer: Funcionalidades do projeto
+* `Categorias`: refeições organizadas em categorias.
+* `Favoritos`: opção para favoritar uma receita de uma refeição.
+* `Filtros`: filtros para exibir somente determinadas receita de refeição.
 
-A few resources to get you started if this is your first Flutter project:
+<br>
+<div display: inline_block align="center">
+   <!-- <img src="./assets/images/screenshots/screenshot_01.png" width="300" alt="Screenshot tela inicial"/>
+   <img src="./assets/images/screenshots/screenshot_02.png" width="300" alt="Screenshot tela lista de refeições"/>
+   <img src="./assets/images/screenshots/screenshot_03.png" width="300" alt="Screenshot tela configurações"/> -->
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## :file_folder: Acesso ao projeto
+Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/meals-app) ou [baixá-lo](https://github.com/GabrielSchiavo/meals-app/archive/refs/heads/main.zip).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## :hammer_and_wrench: Abrir e rodar o projeto
+Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você deve ter configurado em seu PC:
+
+* Flutter - Versão >=2.18.2 <3.0.0
+
+Abra um terminal na pasta raiz do projeto e execute este comando "dart pub get".
+
+Agora ao abrir o projeto com o Visual Studio Code, abra o arquivo "main.dart" localizado na pasta "lib", agora pode executar ou depurar no seu smartphone, em um emulador Android ou iOS, no Windows ou no navegador.
+
+## :white_check_mark: Tecnologias utilizadas
+* `Dart - 2.18.2`
+* `Flutter - 3.3.6`
+* `flutter launcher icons - 0.10.0`
+* `flutter native splash - 2.2.14`
+* `Material Design 3`
