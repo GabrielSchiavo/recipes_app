@@ -3,14 +3,14 @@ flutter_icons:
   ios: true
   remove_alpha_ios: true
   image_path: "assets/icons/icon.png"
-  adaptive_icon_background: "#E34A65"
+  adaptive_icon_background: "#BC004B"
   adaptive_icon_foreground: "assets/icons/adaptative-icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   web:
     generate: true
     image_path: "assets/icons/icon.png"
-    background_color: "#E34A65"
-    theme_color: "#673AB7"
+    background_color: "#BC004B"
+    theme_color: "#BC004B"
   windows:
     generate: true
     image_path: "assets/icons/icon.png"
