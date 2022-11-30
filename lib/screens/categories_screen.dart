@@ -15,10 +15,10 @@ class CategoriesScreen extends StatelessWidget {
 
         // Altera a cor de fundo da statusbar e dos ícones
         systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: Theme.of(context).colorScheme.primary,
-            statusBarIconBrightness: Brightness.light,
-            statusBarBrightness: Brightness.dark,
-          ),
+          statusBarColor: Theme.of(context).colorScheme.primary,
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.dark,
+        ),
       ),
       body: GridView(
         padding: const EdgeInsets.all(20),

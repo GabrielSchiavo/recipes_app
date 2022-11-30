@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/meal_detail_screen.dart';
 
 import '/utils/app_routes.dart';
 import 'screens/categories_screen.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
           outline: const Color(0xFF847375),
           shadow: const Color(0xFF000000),
         ),
-        // canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+        canvasColor: const Color.fromRGBO(255, 251, 255, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               headline6: const TextStyle(
@@ -53,6 +54,14 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.home: (ctx) => const CategoriesScreen(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
+        AppRoutes.mealDetail: (ctx) => const MealDetailScreen(),
+      },
+
+      //Caso não encontre a rota especificada para uma tela, retorna a tela de categorias.
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(builder: (_) {
+          return const CategoriesScreen();
+        });
       },
     );
   }
