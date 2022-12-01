@@ -85,12 +85,27 @@ class MealDetailScreen extends StatelessWidget {
                       children: [
                         ListTile(
                           leading: CircleAvatar(
-                            backgroundColor: Theme.of(context).colorScheme.primary,
-                            child: Text('${index + 1}'),
+                            backgroundColor:
+                                Theme.of(context).colorScheme.primary,
+                            child: Text(
+                              '${index + 1}',
+                              style: TextStyle(
+                                  fontSize: 18,
+                                  color:
+                                      Theme.of(context).colorScheme.background,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
-                          title: Text(meal.steps[index]),
+                          title: Text(
+                            meal.steps[index],
+                            style: const TextStyle(
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
                         ),
-                        Divider(color: Theme.of(context).colorScheme.outline,),
+                        Divider(
+                          color: Theme.of(context).colorScheme.outline,
+                        ),
                       ],
                     );
                   }),
