@@ -9,18 +9,7 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Vamos Cozinhar?'),
-
-        // Altera a cor de fundo da statusbar e dos ícones
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Theme.of(context).colorScheme.primary,
-          statusBarIconBrightness: Brightness.light,
-          statusBarBrightness: Brightness.dark,
-        ),
-      ),
-      body: GridView(
+    return GridView(
         padding: const EdgeInsets.all(20),
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
@@ -31,7 +20,6 @@ class CategoriesScreen extends StatelessWidget {
         children: dummyCategories.map((cat) {
           return CategoryItem(cat);
         }).toList(),
-      ),
-    );
+      );
   }
 }

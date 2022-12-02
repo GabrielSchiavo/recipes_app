@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/screens/meal_detail_screen.dart';
+import 'package:meals_app/screens/settings_screen.dart';
 
 import '/utils/app_routes.dart';
 import 'screens/categories_screen.dart';
 import 'screens/categories_meals_screen.dart';
+import 'screens/tabs_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
           outline: const Color(0xFF847375),
           shadow: const Color(0xFF000000),
         ),
-        canvasColor: const Color.fromRGBO(255, 251, 255, 1),
+        canvasColor: const Color.fromARGB(255, 255, 251, 255),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               headline6: const TextStyle(
@@ -53,9 +55,10 @@ class MyApp extends StatelessWidget {
 
       // home: const CategoriesScreen(),
       routes: {
-        AppRoutes.home: (ctx) => const CategoriesScreen(),
+        AppRoutes.home: (ctx) => const TabsScreen(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
         AppRoutes.mealDetail: (ctx) => const MealDetailScreen(),
+        AppRoutes.settings:(ctx) => const SettingsScreen(),
       },
 
       //Caso não encontre a rota especificada para uma tela, retorna a tela de categorias.
