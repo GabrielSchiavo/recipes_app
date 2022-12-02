@@ -8,10 +8,17 @@ class MealItem extends StatelessWidget {
   const MealItem(this.meal, {super.key});
 
   void _selectMeal(BuildContext context) {
-    Navigator.of(context).pushNamed(
+    Navigator.of(context)
+        .pushNamed(
       AppRoutes.mealDetail,
       arguments: meal,
-    );
+    ).then((result) {
+      if (result == null) {
+        print('Sem resultado!');
+      } else {
+        print('O nome da refeição é $result.');
+      }
+    });
   }
 
   @override
@@ -19,7 +26,7 @@ class MealItem extends StatelessWidget {
     return InkWell(
       onTap: () => _selectMeal(context),
       child: Card(
-        color: Theme.of(context).colorScheme.onSecondaryContainer,
+        color: Theme.of(context).colorScheme.secondaryContainer,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
