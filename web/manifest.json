@@ -1,6 +1,6 @@
 {
-  "name": "Meals",
-  "short_name": "Meals",
+  "name": "Recipes-App",
+  "short_name": "Recipes",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#BC004B",
