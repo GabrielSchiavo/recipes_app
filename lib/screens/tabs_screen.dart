@@ -42,8 +42,8 @@ class _TabsScreenState extends State<TabsScreen> {
       drawer: const MainDrawer(),
       body: _screens[_selectedScreenIndex]['screen'] as Widget,
       bottomNavigationBar: NavigationBar(
-        // backgroundColor: const Color(0xFFEED9EC),
-        // elevation: 0,
+        backgroundColor: Theme.of(context).colorScheme.background,
+        elevation: 1,
         onDestinationSelected: (int index) {
           setState(() {
             _selectedScreenIndex = index;
