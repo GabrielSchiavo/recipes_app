@@ -1,23 +1,23 @@
 # meals-app
 
 <p align="left">
-   <!-- <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/> -->
-   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/>
+   <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
+   <!-- <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/> -->
    <img src="https://img.shields.io/github/license/GabrielSchiavo/meals-app?color=blue&style=for-the-badge"/>
 </p>
 
-App para cadastro de refeições e receitas desenvolvido com a linguagem Dart e framework Flutter.
+App para exibição de receitas desenvolvido com a linguagem Dart e framework Flutter.
 
 ## :hammer: Funcionalidades do projeto
-* `Categorias`: refeições organizadas em categorias.
-* `Favoritos`: opção para favoritar uma receita de uma refeição.
-* `Filtros`: filtros para exibir somente determinadas receita de refeição.
+* `Categorias`: receitas organizadas em categorias.
+* `Favoritos`: opção para favoritar uma receita.
+* `Filtros`: filtros para exibir somente determinadas receita.
 
 <br>
 <div display: inline_block align="center">
-   <!-- <img src="./assets/images/screenshots/screenshot_01.png" width="300" alt="Screenshot tela inicial"/>
-   <img src="./assets/images/screenshots/screenshot_02.png" width="300" alt="Screenshot tela lista de refeições"/>
-   <img src="./assets/images/screenshots/screenshot_03.png" width="300" alt="Screenshot tela configurações"/> -->
+   <img src="./assets/images/screenshots/screenshot_01.png" width="300" alt="Screenshot tela inicial"/>
+   <img src="./assets/images/screenshots/screenshot_02.png" width="300" alt="Screenshot lista de receitas"/>
+   <img src="./assets/images/screenshots/screenshot_03.png" width="300" alt="Screenshot tela detalhes receita"/>
 </div>
 
 ## :file_folder: Acesso ao projeto
