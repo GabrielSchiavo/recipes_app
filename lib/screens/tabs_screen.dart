@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:meals_app/components/main_drawer.dart';
+import 'package:meals_app/models/meal.dart';
 import 'package:meals_app/screens/categories_screen.dart';
 import 'package:meals_app/screens/favorite_screen.dart';
 
 class TabsScreen extends StatefulWidget {
-  const TabsScreen({super.key});
+  final List<Meal> favoritesMeals;
+
+  const TabsScreen(this.favoritesMeals, {super.key});
 
   @override
   State<TabsScreen> createState() => _TabsScreenState();
@@ -13,10 +16,22 @@ class TabsScreen extends StatefulWidget {
 
 class _TabsScreenState extends State<TabsScreen> {
   int _selectedScreenIndex = 0;
-  final List<Map<String, Object>> _screens = [
-    {'title': 'Lista de Categorias', 'screen': const CategoriesScreen()},
-    {'title': 'Meus Favoritos', 'screen': const FavoriteScreen()},
-  ];
+  List<Map<String, Object>> ?_screens;
+
+  @override
+  void initState() {
+    super.initState();
+    _screens = [
+      {
+        'title': 'Lista de Categorias',
+        'screen': const CategoriesScreen(),
+      },
+      {
+        'title': 'Meus Favoritos',
+        'screen': FavoriteScreen(widget.favoritesMeals),
+      },
+    ];
+  }
 
   // _selectScreen(int index) {
   //   setState(() {
@@ -29,7 +44,7 @@ class _TabsScreenState extends State<TabsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          _screens[_selectedScreenIndex]['title'] as String,
+          _screens![_selectedScreenIndex]['title'] as String,
         ),
 
         // Altera a cor de fundo da statusbar e dos ícones
@@ -40,7 +55,7 @@ class _TabsScreenState extends State<TabsScreen> {
         ),
       ),
       drawer: const MainDrawer(),
-      body: _screens[_selectedScreenIndex]['screen'] as Widget,
+      body: _screens![_selectedScreenIndex]['screen'] as Widget,
       bottomNavigationBar: NavigationBar(
         backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 1,
