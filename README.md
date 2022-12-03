@@ -6,7 +6,7 @@
    <img src="https://img.shields.io/github/license/GabrielSchiavo/meals-app?color=blue&style=for-the-badge"/>
 </p>
 
-App para exibição de receitas com navegação entre telas desenvolvido com a linguagem Dart e framework Flutter.
+App para exibição de receitas (estáticas) com navegação entre telas desenvolvido com a linguagem Dart e framework Flutter.
 
 ## :hammer: Funcionalidades do projeto
 * `Categorias`: receitas organizadas em categorias.
