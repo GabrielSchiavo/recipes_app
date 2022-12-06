@@ -96,6 +96,7 @@ class _MyAppState extends State<MyApp> {
       ),
 
       // home: const CategoriesScreen(),
+      debugShowCheckedModeBanner: false,
       routes: {
         AppRoutes.home: (ctx) => TabsScreen(_favoritesMeals),
         AppRoutes.categoriesMeals: (ctx) =>
