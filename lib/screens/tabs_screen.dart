@@ -48,7 +48,8 @@ class _TabsScreenState extends State<TabsScreen> {
         ),
 
         // Altera a cor de fundo da statusbar e dos ícones
-        systemOverlayStyle: const SystemUiOverlayStyle(
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Theme.of(context).colorScheme.primary,
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.dark,
         ),
