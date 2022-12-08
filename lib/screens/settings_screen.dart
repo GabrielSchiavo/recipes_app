@@ -48,8 +48,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         title: const Text('Configurações'),
 
         // Altera a cor de fundo da statusbar e dos ícones
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Theme.of(context).colorScheme.primary,
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.dark,
         ),

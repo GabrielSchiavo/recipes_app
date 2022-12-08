@@ -48,8 +48,7 @@ class _TabsScreenState extends State<TabsScreen> {
         ),
 
         // Altera a cor de fundo da statusbar e dos ícones
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Theme.of(context).colorScheme.primary,
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.dark,
         ),
@@ -57,7 +56,6 @@ class _TabsScreenState extends State<TabsScreen> {
       drawer: const MainDrawer(),
       body: _screens![_selectedScreenIndex]['screen'] as Widget,
       bottomNavigationBar: NavigationBar(
-        backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 1,
         onDestinationSelected: (int index) {
           setState(() {
@@ -65,21 +63,19 @@ class _TabsScreenState extends State<TabsScreen> {
           });
         },
         selectedIndex: _selectedScreenIndex,
-        destinations: <Widget>[
+        destinations: const <Widget>[
           NavigationDestination(
             selectedIcon: Icon(
               Icons.category_rounded,
-              color: Theme.of(context).colorScheme.onBackground,
             ),
-            icon: const Icon(Icons.category_outlined),
+            icon: Icon(Icons.category_outlined),
             label: 'Categorias',
           ),
           NavigationDestination(
             selectedIcon: Icon(
               Icons.star_rounded,
-              color: Theme.of(context).colorScheme.onBackground,
             ),
-            icon: const Icon(Icons.star_border_rounded),
+            icon: Icon(Icons.star_border_rounded),
             label: 'Favoritos',
           ),
         ],

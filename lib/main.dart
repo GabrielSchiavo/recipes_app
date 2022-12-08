@@ -58,25 +58,29 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData tema = ThemeData();
+    // final ThemeData tema = ThemeData();
 
     return MaterialApp(
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: tema.colorScheme.copyWith(
-          primary: const Color(0xFFBC004B),
-          onPrimary: const Color(0xFFFFFFFF),
-          primaryContainer: const Color(0xFFFFD9DE),
-          onPrimaryContainer: const Color(0xFF400014),
-          secondary: const Color(0xFF75565B),
-          secondaryContainer: const Color(0xFFFFD9DE),
-          onSecondaryContainer: const Color.fromARGB(255, 250, 221, 236),
-          background: const Color(0xFFFFFBFF),
-          onBackground: const Color(0xFF201A1B),
-          outline: const Color(0xFF847375),
-          shadow: const Color(0xFF000000),
-        ),
+        //Define a cor principal
+        colorSchemeSeed: Colors.pink[800],
+
+        // colorScheme: tema.colorScheme.copyWith(
+        //   primary: const Color(0xFFBC004B),
+        //   onPrimary: const Color(0xFFFFFFFF),
+        //   primaryContainer: const Color(0xFFFFD9DE),
+        //   onPrimaryContainer: const Color(0xFF400014),
+        //   secondary: const Color(0xFF75565B),
+        //   secondaryContainer: const Color(0xFFFFD9DE),
+        //   onSecondaryContainer: const Color.fromARGB(255, 250, 221, 236),
+        //   background: const Color(0xFFFFFBFF),
+        //   onBackground: const Color(0xFF201A1B),
+        //   outline: const Color(0xFF847375),
+        //   shadow: const Color(0xFF000000),
+        // ),
+
         canvasColor: const Color.fromARGB(255, 255, 251, 255),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(

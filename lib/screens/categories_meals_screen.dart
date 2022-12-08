@@ -22,8 +22,7 @@ class CategoriesMealsScreen extends StatelessWidget {
         title: Text(category.title),
 
         // Altera a cor de fundo da statusbar e dos ícones
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Theme.of(context).colorScheme.primary,
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.dark,
         ),
