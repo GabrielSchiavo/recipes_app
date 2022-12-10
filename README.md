@@ -9,9 +9,9 @@
 App para exibição de receitas (estáticas) com navegação entre telas desenvolvido com a linguagem Dart e framework Flutter.
 
 ## :hammer: Funcionalidades do projeto
-* `Categorias`: receitas organizadas em categorias.
-* `Favoritos`: opção para favoritar uma receita.
-* `Filtros`: filtros para exibir somente determinadas receita.
+* `Categorias:` receitas organizadas em categorias.
+* `Favoritos:` opção para favoritar uma receita.
+* `Filtros:` filtros para exibir somente determinadas receita.
 
 <br>
 <div display: inline_block align="center">
@@ -28,7 +28,10 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projet
 
 * Flutter - Versão >=2.18.2 <3.0.0
 
-Abra um terminal na pasta raiz do projeto e execute este comando "dart pub get".
+Abra um terminal na pasta raiz do projeto e execute este comando:
+```bash
+dart pub get
+```
 
 Agora ao abrir o projeto com o Visual Studio Code, abra o arquivo "main.dart" localizado na pasta "lib", agora pode executar ou depurar no seu smartphone, em um emulador Android ou iOS, no Windows ou no navegador.
 
