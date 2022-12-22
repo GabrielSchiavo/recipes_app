@@ -1,4 +1,4 @@
-# meals-app
+# recipes-app
 
 <p align="left">
    <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
