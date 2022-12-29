@@ -8,7 +8,7 @@
 PRODUCT_NAME = meals_app
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.mealsApp
+PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.kschiavo.mealsApp
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2022 com.gabriel.kschiavo. All rights reserved.
