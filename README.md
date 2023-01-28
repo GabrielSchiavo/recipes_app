@@ -3,7 +3,7 @@
 <p align="left">
    <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
    <!-- <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/> -->
-   <img src="https://img.shields.io/github/license/GabrielSchiavo/meals-app?color=blue&style=for-the-badge"/>
+   <img src="https://img.shields.io/github/license/GabrielSchiavo/recipes-app?color=blue&style=for-the-badge"/>
 </p>
 
 App para exibição de receitas (estáticas) com navegação entre telas desenvolvido com a linguagem Dart e framework Flutter.
