@@ -84,7 +84,7 @@ class _MyAppState extends State<MyApp> {
         canvasColor: const Color.fromARGB(255, 255, 251, 255),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-              headline6: const TextStyle(
+              titleLarge: const TextStyle(
                 fontSize: 18,
                 fontFamily: 'RobotoFlex',
               ),
